@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Code. Tailwind</title>
+
+    <!-- link font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- link tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- style css -->
+    <style>
+        /* colors */
+        .text-primary {
+            color: #303669;
+        }
+
+        /* btn nav */
+        .active {
+            transition: 0.3s;
+            left: 0;
+        }
+    </style>
+
+</head>
+
+<body style="font-family: Poppins, system-ui" class="bg-gray-100 font-poppins">
+    <header class="bg-gray-50 h-16 relative">
+        <nav class="flex justify-between items-center h-full mx-auto px-50 max-md:px-10 max-sm:px-7">
+            <div class="max-md:flex justify-between items-centar max-md:w-full">
+                <a href="index.html" class="text-3xl font-bold text-blue-500">Code<span
+                        class="text-pink-500">.</span></a>
+                <button id="BtnNav"
+                    class="active flex justify-centar items-centar hidden max-md:block cursor-pointer"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg></button>
+            </div>
+            <div id="LinksNav"
+                class="max-md:block max-md:bg-gray-100 max-md:absolute max-md:w-full max-md:p-5 max-md:top-16 max-md:-left-500 max-md:h-screen">
+                <ul>
+                    <li class="inline-block mx-4 hover:text-pink-500 max-md:block max-md:my-5"><a href="#home">Home</a>
+                    </li>
+                    <li class="inline-block mx-4 hover:text-pink-500 max-md:block max-md:my-5"><a
+                            href="#service">Service</a></li>
+                    <li class="inline-block mx-4 hover:text-pink-500 max-md:block max-md:my-5"><a
+                            href="#clients">Clients</a></li>
+                    <li class="inline-block mx-4 hover:text-pink-500 max-md:block max-md:my-5"><a href="#news">News</a>
+                    </li>
+                    <li class="inline-block mx-4 hover:text-pink-500 max-md:block max-md:my-5"><a
+                            href="#contacts">Contacts</a></li>
+                    <button
+                        class="hidden max-md:block max-md:ml-3 max-md:my-5 bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-pink-500 hidden cursor-pointer">Signup</button>
+                </ul>
+            </div>
+            <div class="max-md:hidden">
+                <button
+                    class="bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-pink-500 cursor-pointer">Signup</button>
+            </div>
+        </nav>
+    </header>
+
+    <section
+        class="flex items-center justify-between w-full h-162.5 gap-5 px-50 py-20 max-md:px-10 max-sm:px-7 max-sm:block max-sm:py-10 max-sm:h-auto">
+        <div class="w-1/2 max-sm:w-full max-sm:h-100"><img class="h-100 max-md:h-80 max-sm:w-full max-sm:h-100"
+                src="images/home.png" alt="erorr"></div>
+        <div class="w-1/2 space-y-8 max-md:space-y-5 max-sm:w-full max-sm:space-y-3 max-sm:text-center">
+            <h2 class="text-3xl max-md:text-xl">Multipurpose landing template</h2>
+            <h1 class="text-6xl font-bold text-primary max-md:text-4xl">
+                Beautifully
+                <span class="block">simple, code.</span>
+            </h1>
+            <h3 class="text-2xl max-md:text-lg">
+                codelander is Beautifully
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab excepturi
+                nesciunt
+                suscipit
+                sapiente?
+            </h3>
+            <button class="bg-pink-500 text-white px-7 py-2 rounded-full hover:bg-blue-500 cursor-pointer">Learn
+                More</button>
+        </div>
+    </section>
+
+    <section
+        class="bg-white flex items-center justify-between w-full px-50 py-20 text-gray-600 max-md:px-10 max-md:flex-wrap max-sm:px-7 max-sm:py-10">
+        <div class="flex flex-col items-center justify-center space-y-3 text-center max-md:w-1/2 max-sm:w-full">
+            <img class="h-50" src="images/startegy.jpg" alt="erorr">
+            <h2 class="text-3xl text-primary">Startegy</h2>
+            <p class="">we will work with you <span class="block">to develope tailwind apps</span></p>
+        </div>
+        <div
+            class="flex flex-col items-center justify-center space-y-3 text-center max-md:w-1/2 max-sm:mt-10 max-sm:w-full">
+            <img class="h-50" src="images/automation.jpg" alt="erorr">
+            <h2 class="text-3xl text-primary">Automation</h2>
+            <p class="">work synchronization and <span class="block">automated service</span></p>
+        </div>
+        <div
+            class="flex flex-col items-center justify-center space-y-3 text-center max-md:w-1/2 max-md:mt-10 max-sm:w-full">
+            <img class="h-50" src="images/development.jpg" alt="erorr">
+            <h2 class="text-3xl text-primary">Deployment</h2>
+            <p class="">Dedicated service to deploy<span class="block">and test applications</span></p>
+        </div>
+        <div
+            class="flex flex-col items-center justify-center space-y-3 text-center max-md:w-1/2 max-md:mt-10 max-sm:w-full">
+            <img class="h-50" src="images/education.jpg" alt="erorr">
+            <h2 class="text-3xl text-primary">Education</h2>
+            <p class="">Stay informed on all our tools <span class="block">and technologies</span></p>
+        </div>
+    </section>
+
+    <section class="flex items-center justify-between w-full px-50 py-10 max-md:px-10 max-sm:px-7 max-sm:flex-wrap">
+        <div class="w-1/2 max-sm:w-full max-sm:text-center">
+            <p class="text-lg">Our services</p>
+            <h1 class="text-4xl mb-4 mt-1 font-bold text-primary">Solving Problems</h1>
+            <p class="mb-6 text-lg">This is a great section to introduce your <span class="block max-md:inline">company
+                    and showcase
+                    your
+                    featured services</span></p>
+            <div class="flex flex-col items-start text-center gap-3">
+                <button
+                    class="flex items-centar justify-between w-100 max-md:w-80 max-sm:w-full px-5 py-5 text-white bg-blue-500 rounded-full hover:bg-pink-500 cursor-pointer">Website
+                    Design
+                    <span class="mr-2">+</span></button>
+                <button
+                    class="flex items-centar justify-between w-100 max-md:w-80 max-sm:w-full px-5 py-5 text-white bg-blue-500 rounded-full hover:bg-pink-500 cursor-pointer">Applications
+                    Development
+                    <span class="mr-2">+</span></button>
+            </div>
+        </div>
+        <div class="w-1/2 max-sm:w-full"><img class="h-140 w-full max-md:h-100" src="images/services.png" alt="erorr">
+        </div>
+    </section>
+
+    <section
+        class="flex items-center justify-between bg-white w-full py-10 px-50 max-md:px-10 max-sm:px-7 max-sm:flex-wrap-reverse">
+        <div class="w-1/2 max-sm:w-full"><img class="w-full h-140 max-md:h-100" src="images/services2.jpg" alt="erorr">
+        </div>
+        <div class="w-1/2 px-5 max-sm:w-full max-sm:text-center">
+            <p class="text-lg">Our services</p>
+            <h1 class="text-4xl mb-4 mt-1 font-bold text-primary">Sales Growth</h1>
+            <p class="mb-6 text-lg">You can talk about your secondary services here, or maybe promote your excellent
+                customer service approach. Always grab your website visitors’ attention.
+            </p>
+            <button class="bg-pink-500 text-white px-7 py-2 rounded-full hover:bg-blue-500 cursor-pointer">View
+                Pricing</button>
+        </div>
+    </section>
+
+    <section class="w-full px-50 py-10 max-md:px-10 max-sm:px-7">
+        <div class="text-center mx-auto">
+            <h1 class="text-4xl mb-4 font-bold text-primary">Pricing</h1>
+            <p class="text-lg">
+                Offer multiple packages or monthly subscriptions? why not showcase your
+                <span class="block">
+                    featuredv price plansv here, bold and beautifully
+                </span>
+            </p>
+        </div>
+        <div class="grid grid-cols-3 gap-4 mt-10 max-md:grid-cols-1">
+            <div
+                class="bg-white rounded-3xl h-fit w-80 mt-10 hover:shadow-2xl px-9 py-6 text-center max-md:mt-0 max-md:w-full">
+                <h1 class="text-5xl text-primary">$199</h1>
+                <h2 class="text-blue-400">Basic</h2>
+                <p class="my-3">
+                    Start plan with all the basics included
+                </p>
+                <ul class="w-fit mx-auto">
+                    <li class="flex items-center justify-start gap-1">
+                        <span class="pt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-5 fill-current text-blue-400">
+                                <path fill-rule="evenodd"
+                                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </span>
+                        core Business System
+                    </li>
+                    <li class="mt-2.5 flex items-center justify-start gap-1">
+                        <span class="pt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-5 fill-current text-blue-400">
+                                <path fill-rule="evenodd"
+                                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </span>
+                        Team Mangement
+                    </li>
+                    <li class="mt-2.5 flex items-center justify-start gap-1">
+                        <span class="pt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-5 fill-current text-gray-400">
+                                <path fill-rule="evenodd"
+                                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </span>
+                        Dual Infrastructure
+                    </li>
+                    <li class="mt-2.5 flex items-center justify-start gap-1">
+                        <span class="pt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-5 fill-current text-gray-400">
+                                <path fill-rule="evenodd"
+                                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </span>
+                        Customized features
+                    </li>
+                </ul>
+                <button
+                    class="bg-blue-500 text-white px-9 py-2 rounded-full hover:bg-pink-500 mt-5 cursor-pointer">Enquire</button>
+            </div>
+            <div
+                class="bg-white rounded-3xl h-120 w-80 hover:shadow-2xl border-8 border-blue-400 border-dashed px-9 py-6 text-center max-sm:mt-10 max-md:w-full">
+                <p class="text-sm mb-2 px-2 py-1 bg-blue-300 w-fit mx-auto rounded-3xl text-white">POPULAR</p>
+                <h1 class="text-7xl text-primary">$599</h1>
+                <h2 class="text-blue-400">Growth</h2>
+                <p class="my-3">
+                    Start plan with all the basics included
+                </p>
+                <ul class="w-fit mx-auto">
+                    <li class="flex items-center justify-start gap-1">
+                        <span class="pt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-5 fill-current text-blue-400">
+                                <path fill-rule="evenodd"
+                                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </span>
+                        core Business System
+                    </li>
+                    <li class="mt-2.5 flex items-center justify-start gap-1">
+                        <span class="pt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-5 fill-current text-blue-400">
+                                <path fill-rule="evenodd"
+                                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </span>
+                        Team Mangement
+                    </li>
+                    <li class="mt-2.5 flex items-center justify-start gap-1">
+                        <span class="pt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-5 fill-current text-blue-400">
+                                <path fill-rule="evenodd"
+                                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </span>
+                        Dual Infrastructure
+                    </li>
+                    <li class="mt-2.5 flex items-center justify-start gap-1">
+                        <span class="pt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-5 fill-current text-gray-400">
+                                <path fill-rule="evenodd"
+                                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </span>
+                        Customized features
+                    </li>
+                </ul>
+                <button
+                    class="bg-blue-500 text-white px-9 py-2 rounded-full hover:bg-pink-500 mt-5 cursor-pointer">Enquire</button>
+            </div>
+            <div
+                class="bg-white rounded-3xl h-fit w-80 mt-10 hover:shadow-2xl px-9 py-6 text-center max-md:mt-0 max-sm:mt-10 max-md:w-full">
+                <h1 class="text-5xl text-primary">$999</h1>
+                <h2 class="text-blue-400">Basic</h2>
+                <p class="my-3">
+                    Start plan with all the basics included
+                </p>
+                <ul class="w-fit mx-auto">
+                    <li class="flex items-center justify-start gap-1">
+                        <span class="pt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-5 fill-current text-blue-400">
+                                <path fill-rule="evenodd"
+                                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </span>
+                        core Business System
+                    </li>
+                    <li class="mt-2.5 flex items-center justify-start gap-1">
+                        <span class="pt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-5 fill-current text-blue-400">
+                                <path fill-rule="evenodd"
+                                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </span>
+                        Team Mangement
+                    </li>
+                    <li class="mt-2.5 flex items-center justify-start gap-1">
+                        <span class="pt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-5 fill-current text-blue-400">
+                                <path fill-rule="evenodd"
+                                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </span>
+                        Dual Infrastructure
+                    </li>
+                    <li class="mt-2.5 flex items-center justify-start gap-1">
+                        <span class="pt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-5 fill-current text-blue-400">
+                                <path fill-rule="evenodd"
+                                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </span>
+                        Customized features
+                    </li>
+                </ul>
+                <button
+                    class="bg-blue-500 text-white px-9 py-2 rounded-full hover:bg-pink-500 mt-5 cursor-pointer">Enquire</button>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #303669;"
+        class="grid grid-cols-4 gap-10 px-50 pt-20 pb-7 mt-15 text-white max-md:px-10 max-md:grid-cols-2 max-sm:px-7 max-sm:grid-cols-1 max-sm:text-center">
+        <div class="">
+            <h1 class="mb-3 text-2xl font-bold text-blue-500">Code<span class="text-pink-500">.</span></h1>
+            <p>A beautiful landing page template by Codefest</p>
+        </div>
+        <div class="">
+            <h1 class="mb-3 text-2xl font-bold text-blue-300">About</h1>
+            <p>We like to do business at Codelander HQ to our clients satisfaction</p>
+        </div>
+        <div class="">
+            <h1 class="mb-3 text-2xl font-bold text-blue-300">Contact Us</h1>
+            <p>Palestine Gazg</p>
+            <p>+972 597 772 385</p>
+            <p>mohamed.7.alamoudi@gmail.com</p>
+        </div>
+        <div class="">
+            <h1 class="mb-3 text-2xl font-bold text-blue-300">Socials</h1>
+            <div class="flex items-center justify-start gap-5 ml-1.5 max-sm:justify-center">
+                <div class="" id="whatsapp">
+                    <a href="https://wa.me/+972597772385" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-whatsapp"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="" id="instagram">
+                    <a href="https://www.instagram.com/m7_hamooda/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-instagram"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="" id="linkedin">
+                    <a href="https://www.linkedin.com/in/mohamed-alamoudi-4b9454359/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-linkedin"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-4 text-center pt-5 border-t-2 border-solid max-md:col-span-2 max-sm:col-span-1"> © 2025
+            codefest .All Rights
+            Reserved</div>
+    </footer>
+</body>
+<script>
+    // btn nav
+    const menuBtn = document.getElementById('BtnNav');
+    const navMenu = document.getElementById('LinksNav');
+
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+</html>
